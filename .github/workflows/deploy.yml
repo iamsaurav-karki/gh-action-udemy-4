@@ -9,9 +9,9 @@ env:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster0.abcde.mongodb.net
-      MONGODB_USERNAME: saurav
-      MONGODB_PASSWORD: cddkfdsfioebvsd
+      MONGODB_CLUSTER_ADDRESS: saurav-db-threetier.tbnlt.mongodb.net
+      MONGODB_USERNAME: sauravkarkitech
+      MONGODB_PASSWORD: kAtqpw9-4dzCrpw
       PORT: 8080
 
     runs-on: ubuntu-latest
@@ -37,5 +37,4 @@ jobs:
     steps:
       - name: Output information
         run: |
-
           echo "MongoDB Name: ${{env.MONGODB_DB_NAME}}"
